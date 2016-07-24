@@ -1,10 +1,10 @@
 {
     "name": "lsrur/toolbelt",
-    "description": "Set of PHP useful helper functions wrapped for Laravel.",
+    "description": "Set of PHP helper functions wrapped for Laravel.",
     "license": "MIT",
     "minimum-stability": "stable",
      "keywords": [
-        "laravel", "php", "functions", "tools"
+        "laravel", "php", "functions", "helpers","tools"
     ],
     "autoload": {
         "psr-4": {
