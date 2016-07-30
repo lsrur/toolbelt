@@ -1,4 +1,4 @@
-# Laravel Toolbelt 
+# PHP Toolbelt 
 
 
 ## License

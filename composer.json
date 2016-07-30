@@ -7,11 +7,8 @@
         "laravel", "php", "functions", "helpers","tools"
     ],
     "autoload": {
-        "psr-4": {
-            "Lsrur\\Toolbelt\\": "src/"
-        },
         "files": [
-            "src/helpers.php"
+            "src/Toolbelt.php"
         ]
     },
     "require": {}
