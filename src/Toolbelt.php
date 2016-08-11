@@ -1,10 +1,4 @@
 <?php
-use \Symfony\Component\HttpFoundation\Request;
-use \Symfony\Component\HttpFoundation\Response;
-
-use \Symfony\Component\VarDumper\Dumper\CliDumper;
-use \Symfony\Component\VarDumper\Dumper\HtmlDumper;
-use \Symfony\Component\VarDumper\Cloner\VarCloner;
 
 if (! function_exists('is_assoc')) {
     /**
@@ -50,6 +44,7 @@ if (! function_exists('formatMemSize')) {
         return round($size, $precision).$units[$i];
     }
 }
+
 if (! function_exists('checkSlash')) {
     /**
      * Add slash at the end if doesnt exist
@@ -60,5 +55,13 @@ if (! function_exists('checkSlash')) {
 	{
 	    return substr($str,-1) !== '/' ? $str .'/' : $str;
 	}
+}
+
+if (! function_exists('get_ancestors')) {
+    function get_ancestors ($class) {
+        $classes = array($class);
+        while($class = get_parent_class($class)) { $classes[] = $class; }
+        return $classes;
+    }
 }
 	
